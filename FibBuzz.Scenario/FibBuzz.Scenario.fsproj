@@ -35,7 +35,10 @@
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core" />
     <Reference Include="NaturalSpec">
-      <HintPath>..\..\..\..\usr\local\lib\NaturalSpec\NaturalSpec.dll</HintPath>
+      <HintPath>..\..\..\..\usr\local\lib\build\NaturalSpec.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\usr\local\lib\NaturalSpec\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
