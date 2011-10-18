@@ -10,3 +10,10 @@ let ``When fibonacci takes 0 then it returns [1].`` () =
     |> When fibonacci
     |> It should equal [1]
     |> Verify
+
+[<Scenario>]
+let ``When fibonacci takes 1 then it returns [1; 1].`` () =
+    Given 1
+    |> When fibonacci
+    |> It should equal [1; 1]
+    |> Verify
