@@ -10,4 +10,4 @@ let fibonacci n =
             0
     List.map fib [0..n]
 
-let fizzbuzz n = "1"
+let fizzbuzz n = n.ToString ()
