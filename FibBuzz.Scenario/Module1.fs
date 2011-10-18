@@ -66,3 +66,10 @@ let ``When fizzbuzz takes 10 then it returns "Buzz".`` () =
     |> When fizzbuzz
     |> It should equal "Buzz"
     |> Verify
+
+[<Scenario>]
+let ``When fizzbuzz takes 15 then it returns "FizzBuzz".`` () =
+    Given 15
+    |> When fizzbuzz
+    |> It should equal "FizzBuzz"
+    |> Verify
