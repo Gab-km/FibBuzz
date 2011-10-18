@@ -8,9 +8,4 @@ let fibonacci n =
             1
         else
             0
-    let rec fibList n xs =
-        if n = 0 then
-            ((fib n)::xs)
-        else
-            fibList (n - 1) ((fib n)::xs)
-    fibList n []
+    List.map fib [0..n]
