@@ -94,3 +94,10 @@ let ``When fibbuzz takes 2 then it returns ["1"; "1"; "2"].`` () =
     |> When fibbuzz
     |> It should equal ["1"; "1"; "2"]
     |> Verify
+
+[<Scenario>]
+let ``When fibbuzz takes 3 then it returns ["1"; "1"; "2"; "Fizz"].`` () =
+    Given 3
+    |> When fibbuzz
+    |> It should equal ["1"; "1"; "2"; "Fizz"]
+    |> Verify
