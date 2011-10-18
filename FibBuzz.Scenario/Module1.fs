@@ -24,3 +24,10 @@ let ``When fibonacci takes 2 then it returns [1; 1; 2].`` () =
     |> When fibonacci
     |> It should equal [1; 1; 2]
     |> Verify
+
+[<Scenario>]
+let ``When fizzbuzz takes 1 then it returns "1".`` () =
+    Given 1
+    |> When fizzbuzz
+    |> It should equal "1"
+    |> Verify

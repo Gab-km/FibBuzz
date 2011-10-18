@@ -9,3 +9,5 @@ let fibonacci n =
         else
             0
     List.map fib [0..n]
+
+let fizzbuzz n = "0"
