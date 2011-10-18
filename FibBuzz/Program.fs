@@ -20,4 +20,4 @@ let fizzbuzz n =
     else
         n.ToString ()
 
-let fibbuzz n = [""]
+let fibbuzz n = ["1"]
