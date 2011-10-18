@@ -80,3 +80,10 @@ let ``When fibbuzz takes 0 then it returns ["1"].`` () =
     |> When fibbuzz
     |> It should equal ["1"]
     |> Verify
+
+[<Scenario>]
+let ``When fibbuzz takes 1 then it returns ["1"; "1"].`` () =
+    Given 1
+    |> When fibbuzz
+    |> It should equal ["1"; "1"]
+    |> Verify

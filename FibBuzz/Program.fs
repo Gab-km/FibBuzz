@@ -20,4 +20,4 @@ let fizzbuzz n =
     else
         n.ToString ()
 
-let fibbuzz n = ["1"]
+let fibbuzz n = n |> fibonacci |> List.map fizzbuzz
