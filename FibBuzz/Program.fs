@@ -13,7 +13,7 @@ let fibonacci n =
 let fizzbuzz n =
     if n % 3 = 0 then
         "Fizz"
-    elif n = 5 then
+    elif n % 5 = 0 then
         "Buzz"
     else
         n.ToString ()
