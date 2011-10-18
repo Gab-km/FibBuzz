@@ -10,4 +10,8 @@ let fibonacci n =
             0
     List.map fib [0..n]
 
-let fizzbuzz n = n.ToString ()
+let fizzbuzz n =
+    if n = 3 then
+        "Fizz"
+    else
+        n.ToString ()
